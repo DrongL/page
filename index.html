@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+<style>
+html, body {
+    height:100%;
+    margin:0;
+    padding:0
+}
+#dHead {
+    height:100px;
+    line-height:100px;
+    background:#690;
+    width:100%;
+    position:absolute;
+    z-index:5;
+    top:0;
+    text-align:center;
+}
+#dBody {
+    background:#FC0;
+    width:100%;
+    overflow:auto;
+    top:100px;
+    position:absolute;
+    z-index:10;
+    bottom:100px;
+}
+.mycontent {
+    padding:20px;
+  border:1px solid #ccc;
+}
+#dFoot {
+    height:100px;
+    line-height:100px;
+    background:#690;
+    width:100%;
+    position:fixed;
+    z-index:200;
+    bottom:0;
+    text-align:center;
+}
+  .parent{overflow: hidden;zoom: 1;}
+.left{float: left;width: 100px;}    
+.right{margin-left: 120px;}
+  .fl{float:left;}
+  .fr{float:right;}
+  .aside{background: #fff;
+    width: 100px;
+    overflow: auto;
+    top: 100px;
+    position: absolute;
+    z-index: 10;
+    /*bottom: 80px;*/
+    bottom: 0;
+    z-index: 999;}
+</style>
+</head>
+
+<body>
+<div id="dHead">固定头部100px;</div>
+<div class="aside">
+  <div style="padding-bottom:100px;">2000<br>2000<br>2000<br>2000<br>2000<br>2000<br>2000<br>2000<br>2000<br>2000<br>2000<br>2000<br>2000<br>2000<br>2000<br>2000<br>2000<br>2000<br>2000<br>2000<br>2000<br>2000<br>2000<br>2000<br>20002000<br><br>20002000<br><br>20002000<br><br>20002000<br>QQQQ<br></div>
+  <div id="dFoot" style="height: 80px;width:100px;background: #eee;">固定尾部1</div>
+</div>
+<div id="dBody" style="padding-left:150px;box-sizing: border-box;">
+  <div class="fl" style="border-right:1px solid #666;width:60px;height:100%;position:fixed;">2000<br>2000<br>2000<br>2000<br></div>
+  <div class="mycontent" style="margin-left:65px;position:relative;"> qqqqqqqqqqqqqqqqqqqqqq中间自适应部分<br> 中间自适应部分<br> 中间自适应部分<br> 中间自适应部分<br> 中间自适应部分<br> 中间自适应部分<br> 中间自适应部分<br> 中间自适应部分<br> 中间自适应部分<br> 中间自适应部分<br> 中间自适应部分<br> 中间自适应部分<br> 中间自适应部分<br> 中间自适应部分<br> 中间自适应部分<br> 中间自适应部分<br> 中间自适应部分<br> 中间自适应部分<br> 中间自适应部分<br> 中间自适应部分<br> 中间自适应部分<br> 中间自适应部分<br> 中间自适应部分<br> 中间自适应部分<br> 中间自适应部分<br> 中间自适应部分<br> 中间自适应部分<br> 中间自适应部分<br>
+  </div>
+  <div id="dFoot" style="left:0">固定尾部100px</div>
+</div>
+
+</body>
+</html>
